@@ -16,6 +16,24 @@
       "revId": "47e962992809c43dc9cfdee4897abd8e5cf2b619",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8d9f057a_228d1787",
+        "filename": "rootdir/etc/init.mt6785.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 25640
+      },
+      "writtenOn": "2020-12-17T10:29:25Z",
+      "side": 1,
+      "message": "Sorry didn\u0027t get you 😅 I am trying to import NFC perms since, begonain doesn\u0027t have NFC hardware it\u0027s pointless to do it on common tree.",
+      "parentUuid": "53560473_fe904f64",
+      "revId": "47e962992809c43dc9cfdee4897abd8e5cf2b619",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
