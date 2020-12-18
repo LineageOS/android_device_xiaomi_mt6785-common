@@ -3,3 +3,13 @@ import /init.recovery.mtk.usb.rc
 on fs
     wait /dev/block/platform/bootdevice/
     symlink /dev/block/platform/bootdevice/ /dev/block/bootdevice
+
+on boot
+    start fix_backlight
+
+service fix_backlight /bin/fix_backlight.sh
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0
