@@ -61,7 +61,7 @@ TARGET_BOARD_PLATFORM := mt6785
 TARGET_BOARD_PLATFORM_GPU := mali-g76mc4
 
 # Kernel
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -136,6 +136,8 @@ VENDOR_SECURITY_PATCH := 2020-02-01
 
 # Sepolicy
 include device/mediatek/sepolicy/sepolicy.mk
+
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
