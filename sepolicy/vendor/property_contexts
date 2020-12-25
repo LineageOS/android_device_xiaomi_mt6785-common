@@ -1,2 +1,5 @@
+# Camera
+ro.mtk_cam_dualzoom_support u:object_r:camera_prop:s0
+
 # WiFi
 vendor.wlan.firmware.version u:object_r:wifi_prop:s0
